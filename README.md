@@ -11,8 +11,12 @@ A plain HTML/CSS static site with no build step and no dependencies. It loads fa
 /assets/main.js      use-case phone carousel (no dependencies)
 /assets/founder.svg  placeholder photo, replace with yours
 /vercel.json         clean URLs + asset caching
-/brand/              logo pack (Hindi + English, light + dark, mark SVG + 512px PNG)
+/brand/              logo pack v2 — two palms holding a marigold (SVG + PNG, Hindi + English, reverse, mono, app icon)
 ```
+
+## Brand
+
+Colours, fonts, logo rules and tone of voice follow the Sambhal brand guideline: Neel `#232E66`, Genda `#F2A43A`, Kagaz `#F7F3EA`, Syahi `#15161D`; Bricolage Grotesque + Anek Devanagari for headlines, Inter + Noto Sans Devanagari for text.
 
 ## Before you go live
 
