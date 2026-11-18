@@ -24,6 +24,16 @@ Colours, fonts, logo rules and tone of voice follow the Sambhal brand guideline:
 - Replace `/assets/founder.svg` with your photo (e.g. `/assets/founder.jpg`, square, at least 160×160) in both HTML files.
 - The chat examples in the phone use sample names, amounts and items. Adjust them to match your first target business type.
 
+## Updating the site (no stale cache)
+
+Browsers check for a fresh copy of every page and file on each visit (`vercel.json`), and each `/assets/` link carries a content-hash version. After changing anything in `/assets`, run:
+
+```bash
+python3 scripts/stamp_assets.py
+```
+
+then commit. Visitors get the new version on their next load — no hard refresh needed.
+
 ## Run locally
 
 ```bash
