@@ -21,7 +21,7 @@ Colours, fonts, logo rules and tone of voice follow the Sambhal brand guideline:
 ## Before you go live
 
 - WhatsApp and phone are set to **+91 98734 70074** on every button. Each button sends its own pre-filled message, so you can tell which one a lead tapped.
-- Replace `/assets/founder.svg` with your photo (e.g. `/assets/founder.jpg`, square, at least 160×160) in both HTML files.
+- Founder photo: `/assets/founder.jpg` (square, 320×320). To change it, replace the file and run the stamp script.
 - The chat examples in the phone use sample names, amounts and items. Adjust them to match your first target business type.
 
 ## Updating the site (no stale cache)
