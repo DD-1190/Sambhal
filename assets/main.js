@@ -6,6 +6,8 @@
   var slides = root.querySelectorAll('.slide');
   var tabs = root.querySelectorAll('.uc-tab');
   var caption = root.querySelector('.uc-caption');
+  var tabList = root.querySelector('.uc-tabs');
+  var visible = true;
   var screen = root.querySelector('.screen');
   var current = 0;
   var timer = null;
@@ -22,8 +24,10 @@
       var on = n === current;
       t.setAttribute('aria-selected', on ? 'true' : 'false');
       t.tabIndex = on ? 0 : -1;
-      if (on && t.scrollIntoView && root.dataset.ready) {
-        t.scrollIntoView({ block: 'nearest', inline: 'center', behavior: reduce ? 'auto' : 'smooth' });
+      // Scroll only the tab row sideways — never the page.
+      if (on && tabList && tabList.scrollWidth > tabList.clientWidth) {
+        var left = t.offsetLeft - (tabList.clientWidth - t.offsetWidth) / 2;
+        tabList.scrollTo({ left: Math.max(0, left), behavior: reduce ? 'auto' : 'smooth' });
       }
     });
     if (caption) caption.textContent = slides[current].getAttribute('data-caption') || '';
@@ -32,7 +36,7 @@
   function start() {
     if (reduce) return;
     stop();
-    timer = setInterval(function () { show(current + 1); }, 4500);
+    timer = setInterval(function () { if (visible && !document.hidden) show(current + 1); }, 4500);
   }
   function stop() { if (timer) { clearInterval(timer); timer = null; } }
 
@@ -61,7 +65,13 @@
   root.addEventListener('mouseenter', stop);
   root.addEventListener('mouseleave', start);
 
+  // Only rotate while the phone is on screen
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      visible = entries[0].isIntersecting;
+    }, { threshold: 0.2 }).observe(root);
+  }
+
   show(0);
-  root.dataset.ready = '1';
   start();
 })();
