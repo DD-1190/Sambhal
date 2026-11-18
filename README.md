@@ -8,6 +8,7 @@ A plain HTML/CSS static site with no build step and no dependencies. It loads fa
 /assets/styles.css   shared styles
 /assets/favicon.svg
 /assets/logo-mark.svg  Sambhal logo mark
+/assets/main.js      use-case phone carousel (no dependencies)
 /assets/founder.svg  placeholder photo, replace with yours
 /vercel.json         clean URLs + asset caching
 /brand/              logo pack (Hindi + English, light + dark, mark SVG + 512px PNG)
@@ -15,18 +16,9 @@ A plain HTML/CSS static site with no build step and no dependencies. It loads fa
 
 ## Before you go live
 
-Search the project for these and replace them:
-
-| Find | Replace with |
-|---|---|
-| `910000000000` | Your WhatsApp number: country code + number, no `+` or spaces (e.g. `919812345678`) |
-| `+91 00000 00000` | Your phone number as it should appear |
-| `[आपका नाम]` / `[Your name]` | Your name |
-| `[पता]` / `[address]` / `[Address]` | Your office address |
-| `/assets/founder.svg` | Your photo, e.g. `/assets/founder.jpg` (square, at least 160×160) |
-| `₹4,250` in the chat example | A realistic price for your first target business type |
-
-Also check the `TODO` comments in both HTML files.
+- WhatsApp and phone are set to **+91 98734 70074** on every button. Each button sends its own pre-filled message, so you can tell which one a lead tapped.
+- Replace `/assets/founder.svg` with your photo (e.g. `/assets/founder.jpg`, square, at least 160×160) in both HTML files.
+- The chat examples in the phone use sample names, amounts and items. Adjust them to match your first target business type.
 
 ## Run locally
 
