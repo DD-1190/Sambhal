@@ -1,4 +1,4 @@
-# Landing page — AI for small businesses (Hindi + English)
+# Sambhal — landing page (Hindi + English)
 
 A plain HTML/CSS static site with no build step and no dependencies. It loads fast on slow 4G.
 
@@ -7,8 +7,10 @@ A plain HTML/CSS static site with no build step and no dependencies. It loads fa
 /en/index.html       English (served at /en)
 /assets/styles.css   shared styles
 /assets/favicon.svg
+/assets/logo-mark.svg  Sambhal logo mark
 /assets/founder.svg  placeholder photo, replace with yours
 /vercel.json         clean URLs + asset caching
+/brand/              logo pack (Hindi + English, light + dark, mark SVG + 512px PNG)
 ```
 
 ## Before you go live
@@ -19,7 +21,6 @@ Search the project for these and replace them:
 |---|---|
 | `910000000000` | Your WhatsApp number: country code + number, no `+` or spaces (e.g. `919812345678`) |
 | `+91 00000 00000` | Your phone number as it should appear |
-| `[ब्रांड]` / `[Brand]` | Your brand name |
 | `[आपका नाम]` / `[Your name]` | Your name |
 | `[पता]` / `[address]` / `[Address]` | Your office address |
 | `/assets/founder.svg` | Your photo, e.g. `/assets/founder.jpg` (square, at least 160×160) |
