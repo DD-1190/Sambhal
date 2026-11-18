@@ -3,8 +3,9 @@
 A plain HTML/CSS static site with no build step and no dependencies. It loads fast on slow 4G.
 
 ```
-/index.html          Hindi (default, served at /)
-/en/index.html       English (served at /en)
+/index.html          English (default, served at /)
+/hi/index.html       Hindi (served at /hi)
+/sitemap.xml, /robots.txt   for Google; /en redirects to /
 /assets/styles.css   shared styles
 /assets/favicon.svg
 /assets/logo-mark.svg  Sambhal logo mark
