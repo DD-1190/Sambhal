@@ -7,6 +7,7 @@
   var tabs = root.querySelectorAll('.uc-tab');
   var caption = root.querySelector('.uc-caption');
   var tabList = root.querySelector('.uc-tabs');
+  var more = root.querySelector('.uc-link');
   var visible = true;
   var screen = root.querySelector('.screen');
   var current = 0;
@@ -31,6 +32,7 @@
       }
     });
     if (caption) caption.textContent = slides[current].getAttribute('data-caption') || '';
+    if (more && slides[current].getAttribute('data-href')) more.href = slides[current].getAttribute('data-href');
   }
 
   function start() {

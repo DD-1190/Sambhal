@@ -3,6 +3,7 @@
   <url>
     <loc>https://www.sambhalhub.in/</loc>
     <lastmod>2026-11-18</lastmod>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/"/>
     <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/"/>
@@ -10,8 +11,73 @@
   <url>
     <loc>https://www.sambhalhub.in/hi</loc>
     <lastmod>2026-11-18</lastmod>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/"/>
     <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/whatsapp-quotations</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/whatsapp-quotations"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/whatsapp-quotations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/whatsapp-quotations"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/hi/whatsapp-quotations</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/whatsapp-quotations"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/whatsapp-quotations"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/whatsapp-quotations"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/whatsapp-payment-reminders</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/whatsapp-payment-reminders"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/whatsapp-payment-reminders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/whatsapp-payment-reminders"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/hi/whatsapp-payment-reminders</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/whatsapp-payment-reminders"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/whatsapp-payment-reminders"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/whatsapp-payment-reminders"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/daily-sales-report-whatsapp</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/daily-sales-report-whatsapp"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/daily-sales-report-whatsapp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/daily-sales-report-whatsapp"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/hi/daily-sales-report-whatsapp</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/daily-sales-report-whatsapp"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/daily-sales-report-whatsapp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/daily-sales-report-whatsapp"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/whatsapp-appointment-booking</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/whatsapp-appointment-booking"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/whatsapp-appointment-booking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/whatsapp-appointment-booking"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/hi/whatsapp-appointment-booking</loc>
+    <lastmod>2026-11-18</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/whatsapp-appointment-booking"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/whatsapp-appointment-booking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/whatsapp-appointment-booking"/>
   </url>
 </urlset>

@@ -7,7 +7,7 @@ fetch the new file immediately and keep reusing unchanged ones.
 import hashlib, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PAGES = [ROOT / "index.html", ROOT / "hi" / "index.html"]
+PAGES = sorted(p for p in ROOT.glob("**/index.html") if ".git" not in p.parts)
 LINK = re.compile(r'((?:href|src)=")(/assets/[^"?#]+)(?:\?v=[0-9a-f]+)?(")')
 
 def version(path: str) -> str:
