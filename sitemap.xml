@@ -80,4 +80,20 @@
     <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/whatsapp-appointment-booking"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/whatsapp-appointment-booking"/>
   </url>
+  <url>
+    <loc>https://www.sambhalhub.in/property-dealers</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/property-dealers"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/property-dealers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/property-dealers"/>
+  </url>
+  <url>
+    <loc>https://www.sambhalhub.in/hi/property-dealers</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.sambhalhub.in/property-dealers"/>
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.sambhalhub.in/hi/property-dealers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.sambhalhub.in/property-dealers"/>
+  </url>
 </urlset>
