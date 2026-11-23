@@ -318,3 +318,65 @@
 }
 
 .dk-faq { padding-top: var(--section); }
+
+/* ---------- V2: lead engine ---------- */
+
+.dk-spon { font-size: 10.5px; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
+.dk-hero h1 { font-size: clamp(34px, 4.2vw, 50px); line-height: 1.1; }
+:lang(hi) .dk-hero h1 { font-size: clamp(32px, 4vw, 48px); line-height: 1.3; }
+
+.dk-new-sec { padding: var(--section) 0; }
+.dk-new-sec .section-head { margin-bottom: 36px; }
+.dk-new-grid { display: grid; gap: 14px; }
+.dk-new {
+  display: flex; flex-direction: column; gap: 10px;
+  padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
+}
+.dk-new .ico { width: 46px; height: 46px; border-radius: 14px; background: var(--genda-100); color: var(--mitti); display: grid; place-items: center; margin-bottom: 6px; }
+.dk-new h3 { font-family: var(--display); font-size: 21px; font-weight: 700; line-height: 1.25; }
+.dk-new p { font-size: 15.5px; line-height: 1.55; color: var(--ink-2); }
+.dk-when { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.dk-when b { color: var(--patti); font-weight: 600; }
+.dk-seller { margin-top: 14px; display: flex; align-items: center; gap: 14px; padding: 16px 20px; border: 1px dashed var(--line-2); border-radius: var(--r); }
+.dk-seller .ico { flex: none; width: 40px; height: 40px; border-radius: 12px; background: var(--neel-100); color: var(--neel); display: grid; place-items: center; }
+.dk-seller p { font-size: 15.5px; color: var(--ink-2); }
+.dk-seller strong { color: var(--ink); }
+
+.dk-funnel-sec { padding: var(--section) 0; background: var(--surface); border-block: 1px solid var(--line); }
+.dk-funnel-sec .section-head { margin-bottom: 40px; }
+.dk-funnel { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: f; }
+.dk-funnel li {
+  position: relative; display: flex; flex-direction: column; gap: 2px;
+  padding: 18px 20px; border-radius: var(--r); background: var(--bg); border: 1px solid var(--line);
+  counter-increment: f;
+}
+.dk-funnel li::before { content: counter(f); font-size: 12px; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+.dk-funnel li.dk-sec { background: var(--neel); border-color: var(--neel); color: #fff; }
+.dk-funnel li.dk-sec::before { color: var(--genda); }
+.dk-funnel b { font-family: var(--display); font-size: 19px; font-weight: 700; line-height: 1.25; }
+.dk-funnel span { font-size: 14px; color: var(--muted); }
+.dk-funnel li.dk-sec span { color: var(--neel-200); }
+.dk-funnel-mark { margin-top: 16px; font-size: 14px; font-weight: 600; color: var(--neel); }
+.dk-funnel-mark span { display: inline-flex; align-items: center; gap: 8px; }
+.dk-funnel-mark span::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--neel); }
+
+.dk-pricing .dk-price-grid { max-width: 880px; grid-template-columns: minmax(0, 1fr); }
+.dk-pricing .dk-check { max-width: 880px; margin: 16px auto 0; display: grid; }
+
+@media (min-width: 720px) {
+  .dk-new-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dk-funnel { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+  .dk-funnel li:not(:last-child)::after {
+    content: ""; position: absolute; right: -8px; top: 50%; width: 8px; height: 2px; background: var(--line-2);
+  }
+  .dk-funnel-mark { padding-left: calc(40% + 4px); text-align: left; }
+  .dk-pricing .dk-price-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dk-pricing .dk-check { grid-template-columns: 1fr auto; }
+  .dk-own-grid ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dk .step-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1000px) {
+  .dk-new-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .dk .step-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .dk-own-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
+}
