@@ -203,7 +203,118 @@ C = {
  ),
 }
 
-PORTALS = ["Instagram", "Facebook", "Google", "99acres", "MagicBricks", "Housing.com", "WhatsApp"]
+
+# ---- Simplified copy (v2.1): fewer words, one idea per section ----
+C["en"].update(
+  title="More Buyers & Site Visits for Property Dealers | Sambhal",
+  desc="Local ads that bring buyers to your WhatsApp, and a digital secretary that replies to every lead in 1 minute and books the site visit. For property dealers. From ₹15,000/month.",
+  pill="For property dealers",
+  h1='More buyers. <span class="hl">More site visits.</span>',
+  h1_plain="More buyers. More site visits.",
+  lead="We bring buyers to your WhatsApp with local ads — and reply to every lead in 1 minute, even at 11 pm.",
+  cta="Get more site visits", price_link="Plans from ₹15,000/month",
+  salary="Your number. Your leads. Stop anytime.",
+  works="Works with",
+  quote="“Portal pe paisa daalo — aur wahi lead paanch aur dealers ko bhi milti hai.”",
+  pains=["Shared portal leads", "Late replies, lost buyers", "Old leads never called back"],
+  n_eyebrow="1 · We bring buyers", n_h2="New buyers, straight to your WhatsApp",
+  new=[("Listing → ad", "Every new listing becomes a post, reel and ad the same day.", ""),
+       ("Local WhatsApp ads", "Small ads in your area that open a chat with you — not a form.", ""),
+       ("Old contacts", "Past enquiries get a message when a matching property comes in.", ""),
+       ("Google", "Weekly posts and reviews so “property dealer near me” finds you.", "")],
+  b_eyebrow="2 · We handle every lead", b_h2="Your digital secretary does the rest",
+  b1=("Reply in 1 minute", "Day or night, every lead gets a reply — budget, area, BHK.",
+      [("11:04 pm", "Instagram", "38 sec"), ("6:52 am", "99acres", "41 sec"), ("1:15 pm", "WhatsApp", "22 sec")], "replied in"),
+  stat=("&lt; 1 min", "first reply, 24×7"),
+  b2=("Clean listing cards", "Photos, price, size and your RERA number — sent only to the right buyer."),
+  b3=("Old leads come back", "New plot in? Everyone who asked for one hears about it.",
+      "Sir, aapne plot poocha tha — Sector 12 mein naya 200 gaj aaya hai. Dekhna chahenge?"),
+  b4=("Your day in one message", "Every night at 9 pm: new leads, tomorrow’s visits, who to call.",
+      "Today at Sharma Properties", [("New leads", "14"), ("Site visits tomorrow", "5"), ("Call these buyers", "3")]),
+  roi_h="Two extra deals a quarter pay for everything — ads included.",
+  roi_p="1% on a ₹1 Cr flat is ₹1 lakh to you.",
+  s_eyebrow="How it starts", s_h2="Live in about a week",
+  steps=[("Send your listings", "Excel, Google Sheet or just photos on WhatsApp."),
+         ("Set your ad budget", "Paid from your own ad account, in your name."),
+         ("Buyers start coming", "Every lead gets a reply. You get a visits report every Monday.")],
+  own_eyebrow="Aapke leads, aapke paas", own_h2="Everything stays yours.",
+  own=[("Your number", "Buyers see your business — never Sambhal."),
+       ("Your ad account", "In your name. You keep it if you stop."),
+       ("Your lead sheet", "Every lead in your Google Sheet. Never shared.")],
+  p_h2="Two plans. No commission. No contract.",
+  plan=("Secretary", "You already get enough leads", "₹15,000", "/month",
+        ["Replies to every lead in 1 minute, 24×7", "Listing cards and site-visit booking", "Old-lead follow-ups and 9 pm summary", "8 expert hours a month"],
+        "Choose Secretary"),
+  plan2=("Secretary + Lead Engine", "You want more buyers", "₹35,000", "/month + ad budget",
+        ["Everything in Secretary", "Listings turned into posts, reels and ads", "Local WhatsApp ads, tuned every week", "Weekly visits report · 20 expert hours"],
+        "Get more site visits", "We suggest"),
+  chk=("Not sure yet?", "Start with a ₹999 check", "30 minutes on your leads and listings. Full refund if it isn’t useful.", "₹999", "Book the check"),
+  fine="Ad spend goes from your account to Meta — we suggest ₹15,000–20,000 a month. Stop the ads anytime and keep the secretary.",
+  f_h2="Questions dealers ask",
+  faq=[("How many leads will I get?", "We don’t promise a number — it depends on your area, listings and ad budget. You see leads, visits and cost every week."),
+       ("Who pays for the ads?", "You pay Meta directly from an ad account in your name. Our fee covers making and running the ads."),
+       ("Will buyers know it’s not me?", "No. Messages go from your number, in your name. Hot buyers and negotiation come straight to you."),
+       ("Can it talk in Hindi?", "Yes — Hindi, English or Hinglish, whichever the buyer writes in."),
+       ("Can I stop anytime?", "Yes. Stop any month, or stop the ads and keep the ₹15,000 Secretary plan.")],
+  final_h2="Batao kaunsa area — hum buyers dhoondhte hain.",
+  final_lead="Send a voice note on WhatsApp with your area and the property you sell. We’ll show you what your ads would look like.",
+)
+C["hi"].update(
+  title="प्रॉपर्टी डीलर के लिए नए खरीदार और ज़्यादा साइट विज़िट | सँभाल",
+  desc="लोकल ऐड जो खरीदार को आपके WhatsApp पर लाएँ, और डिजिटल सेक्रेटरी जो हर लीड को 1 मिनट में जवाब देकर साइट विज़िट बुक करे। ₹15,000/महीना से।",
+  pill="प्रॉपर्टी डीलर के लिए",
+  h1='नए खरीदार। <span class="hl">ज़्यादा साइट विज़िट।</span>',
+  h1_plain="नए खरीदार। ज़्यादा साइट विज़िट।",
+  lead="लोकल ऐड से खरीदार सीधे आपके WhatsApp पर — और हर लीड को 1 मिनट में जवाब, रात 11 बजे भी।",
+  cta="ज़्यादा साइट विज़िट पाएँ", price_link="प्लान ₹15,000/महीना से",
+  salary="आपका नंबर। आपकी लीड। जब चाहें बंद करें।",
+  works="इनके साथ चलता है",
+  quote="“पोर्टल पर पैसा डालो — और वही लीड पाँच और डीलरों को भी मिलती है।”",
+  pains=["शेयर की हुई पोर्टल लीड", "देर से जवाब, खरीदार गया", "पुरानी लीड को दोबारा फ़ोन नहीं"],
+  n_eyebrow="1 · हम खरीदार लाते हैं", n_h2="नए खरीदार, सीधे आपके WhatsApp पर",
+  new=[("लिस्टिंग → ऐड", "हर नई लिस्टिंग उसी दिन पोस्ट, रील और ऐड बनती है।", ""),
+       ("लोकल WhatsApp ऐड", "आपके इलाके में छोटे ऐड जो फ़ॉर्म नहीं, सीधे आपसे चैट खोलें।", ""),
+       ("पुराने कॉन्टैक्ट", "मिलती-जुलती प्रॉपर्टी आते ही पुरानी पूछताछ को मैसेज।", ""),
+       ("Google", "हर हफ़्ते पोस्ट और रिव्यू, ताकि “पास में प्रॉपर्टी डीलर” में आप दिखें।", "")],
+  b_eyebrow="2 · हम हर लीड सँभालते हैं", b_h2="बाकी काम आपका डिजिटल सेक्रेटरी करता है",
+  b1=("1 मिनट में जवाब", "दिन हो या रात, हर लीड को जवाब — बजट, इलाका, BHK।",
+      [("11:04 pm", "Instagram", "38 सेकंड"), ("6:52 am", "99acres", "41 सेकंड"), ("1:15 pm", "WhatsApp", "22 सेकंड")], "जवाब"),
+  stat=("&lt; 1 मिनट", "पहला जवाब, 24×7"),
+  b2=("साफ़ लिस्टिंग कार्ड", "फ़ोटो, दाम, साइज़ और आपका RERA नंबर — सिर्फ़ सही खरीदार को।"),
+  b3=("पुरानी लीड लौट आती हैं", "नया प्लॉट आया? जिसने भी प्लॉट पूछा था, उसे खबर।",
+      "सर, आपने प्लॉट पूछा था — सेक्टर 12 में नया 200 गज़ आया है। देखना चाहेंगे?"),
+  b4=("पूरा दिन, एक मैसेज में", "हर रात 9 बजे: नई लीड, कल की विज़िट, किसे फ़ोन करना है।",
+      "आज शर्मा प्रॉपर्टीज़ में", [("नई लीड", "14"), ("कल की साइट विज़िट", "5"), ("इन्हें फ़ोन करें", "3")]),
+  roi_h="तिमाही में दो डील ज़्यादा — और पूरा ख़र्च वसूल, ऐड समेत।",
+  roi_p="₹1 करोड़ के फ़्लैट पर 1% यानी आपके ₹1 लाख।",
+  s_eyebrow="शुरुआत", s_h2="लगभग एक हफ़्ते में चालू",
+  steps=[("लिस्टिंग भेजें", "Excel, Google Sheet या WhatsApp पर बस फ़ोटो।"),
+         ("ऐड बजट तय करें", "आपके नाम के ऐड अकाउंट से।"),
+         ("खरीदार आने लगें", "हर लीड को जवाब। हर सोमवार विज़िट रिपोर्ट।")],
+  own_eyebrow="भरोसा", own_h2="सब कुछ आपका रहता है।",
+  own=[("आपका नंबर", "खरीदार को आपका बिज़नेस दिखता है — सँभाल नहीं।"),
+       ("आपका ऐड अकाउंट", "आपके नाम पर। बंद करने पर भी आपका।"),
+       ("आपकी लीड शीट", "हर लीड आपकी Google Sheet में। कभी शेयर नहीं।")],
+  p_h2="दो प्लान। न कमीशन, न कॉन्ट्रैक्ट।",
+  plan=("सेक्रेटरी", "लीड पहले से काफ़ी हैं", "₹15,000", "/महीना",
+        ["हर लीड को 1 मिनट में जवाब, 24×7", "लिस्टिंग कार्ड और साइट विज़िट बुकिंग", "पुरानी लीड से बात और रात 9 बजे सारांश", "हर महीने 8 घंटे एक्सपर्ट"],
+        "सेक्रेटरी चुनें"),
+  plan2=("सेक्रेटरी + लीड इंजन", "नए खरीदार चाहिए", "₹35,000", "/महीना + ऐड बजट",
+        ["सेक्रेटरी प्लान का सब कुछ", "लिस्टिंग से पोस्ट, रील और ऐड", "लोकल WhatsApp ऐड, हर हफ़्ते सुधार", "हर हफ़्ते विज़िट रिपोर्ट · 20 घंटे एक्सपर्ट"],
+        "ज़्यादा साइट विज़िट पाएँ", "हमारी सलाह"),
+  chk=("अभी पक्का नहीं?", "₹999 की जाँच से शुरू करें", "आपकी लीड और लिस्टिंग पर 30 मिनट। काम का न लगे तो पूरा पैसा वापस।", "₹999", "जाँच बुक करें"),
+  fine="ऐड का पैसा आपके अकाउंट से सीधे Meta को — हम ₹15,000–20,000 महीना सुझाते हैं। ऐड कभी भी बंद करें, सेक्रेटरी चालू रखें।",
+  f_h2="डीलर अक्सर पूछते हैं",
+  faq=[("मुझे कितनी लीड मिलेंगी?", "हम गिनती का वादा नहीं करते — यह इलाके, लिस्टिंग और ऐड बजट पर निर्भर है। हर हफ़्ते लीड, विज़िट और ख़र्च दिखेगा।"),
+       ("ऐड का पैसा कौन देता है?", "आप, अपने नाम के ऐड अकाउंट से सीधे Meta को। हमारी फ़ीस ऐड बनाने और चलाने की है।"),
+       ("क्या खरीदार को पता चलेगा कि यह मैं नहीं हूँ?", "नहीं। मैसेज आपके नंबर से, आपके नाम से जाते हैं। गर्म खरीदार और मोलभाव सीधे आपके पास।"),
+       ("क्या यह हिंदी में बात करता है?", "हाँ — हिंदी, अंग्रेज़ी या हिंग्लिश, जिसमें खरीदार लिखे।"),
+       ("क्या कभी भी बंद कर सकता हूँ?", "हाँ। किसी भी महीने बंद करें, या ऐड बंद करके ₹15,000 का सेक्रेटरी प्लान रखें।")],
+  final_h2="बताइए कौन-सा इलाका — खरीदार हम ढूँढेंगे।",
+  final_lead="WhatsApp पर एक वॉइस नोट भेजिए — इलाका और आप कैसी प्रॉपर्टी बेचते हैं। हम दिखाएँगे आपके ऐड कैसे दिखेंगे।",
+)
+
+PORTALS = ["Instagram", "Facebook", "Google", "99acres", "MagicBricks", "WhatsApp"]
 PAIN_ICO = [ic('<path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M12 8v4l2.5 1.5"/>'),
             ic('<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/>'),
             ic('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/><path d="M16 2l6 6M22 2l-6 6"/>')]
@@ -274,7 +385,7 @@ def build(lang, home):
     own = "".join(f'<li><span class="ico">{OWN_ICO[i]}</span><strong>{t}</strong><span>{d}</span></li>' for i, (t, d) in enumerate(c["own"]))
     faqs = "\n".join(f'        <details>\n          <summary>{q}{ICON["plus"]}</summary>\n          <p>{a}</p>\n        </details>' for q, a in c["faq"])
     portals = "".join(f"<li>{p}</li>" for p in PORTALS)
-    newcards = "\n".join(f'        <article class="dk-new"><span class="ico">{NEW_ICO[i]}</span><h3>{t}</h3><p>{d}</p><span class="dk-when">{c["res_label"]}: <b>{w}</b></span></article>'
+    newcards = "\n".join(f'        <article class="dk-new"><span class="ico">{NEW_ICO[i]}</span><h3>{t}</h3><p>{d}</p></article>'
                          for i, (t, d, w) in enumerate(c["new"]))
     funnel = "".join(f'<li class="{"dk-sec" if i >= 2 else ""}"><b>{t}</b><span>{d}</span></li>' for i, (t, d) in enumerate(c["funnel"]))
     p2 = c["plan2"]
@@ -375,7 +486,6 @@ def build(lang, home):
     <div class="wrap">
       <span class="eyebrow">{c["q_eyebrow"]}</span>
       <blockquote><p>{c["quote"]}</p></blockquote>
-      <p class="dk-qnote">{c["q_note"]}</p>
       <ul class="dk-pains">{pains}</ul>
     </div>
   </section>
@@ -389,18 +499,6 @@ def build(lang, home):
       <div class="dk-new-grid">
 {newcards}
       </div>
-      <div class="dk-seller"><span class="ico">{SELLER_ICO}</span><p><strong>{c["seller"][0]}</strong> {c["seller"][1]}</p></div>
-    </div>
-  </section>
-
-  <section class="dk-funnel-sec">
-    <div class="wrap">
-      <div class="section-head center">
-        <span class="eyebrow">{c["f_eyebrow2"]}</span>
-        <h2>{c["f_h22"]}</h2>
-      </div>
-      <ol class="dk-funnel">{funnel}</ol>
-      <p class="dk-funnel-mark"><span>{c["funnel_mark"]}</span></p>
     </div>
   </section>
 
@@ -429,34 +527,6 @@ def build(lang, home):
           <h3>{b4[0]}</h3><p>{b4[1]}</p>
           <div class="dk-summary"><p class="dk-sum-head"><span>9:00 pm</span>{b4[2]}</p><ul>{summary}</ul></div>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="dk-ba-sec">
-    <div class="wrap">
-      <div class="section-head center">
-        <span class="eyebrow">{c["ba_eyebrow"]}</span>
-        <h2>{c["ba_h2"]}</h2>
-      </div>
-      <div class="dk-ba">
-        <figure class="dk-before">
-          <figcaption>{c["before_tag"]}</figcaption>
-          <div class="dk-chatbg"><div class="bubble in"><small class="dk-fwd">↪ {c["fwd"]}</small><span class="dk-blur" aria-hidden="true"></span>{c["before_msg"]}<span class="time">2:17 pm</span></div></div>
-        </figure>
-        <div class="dk-arrow" aria-hidden="true">{ICON["arrow"]}</div>
-        <figure class="dk-after">
-          <figcaption>{c["after_tag"]}</figcaption>
-          <div class="dk-listing">
-            {pic("resale", "", "(min-width: 900px) 420px, 90vw", "", False, 1200, 800)}
-            <div class="dk-listing-body">
-              <b>{af[0]}</b><span>{af[1]}</span>
-              <ul class="dk-chips">{chips(af[2])}</ul>
-              <p class="dk-rera-line">{TICK}{af[3]}</p>
-              <span class="dk-fake-btn">{af[4]}</span>
-            </div>
-          </div>
-        </figure>
       </div>
     </div>
   </section>

@@ -178,7 +178,7 @@
 .dk-log { list-style: none; margin: auto 0 0; padding: 20px 0 0; display: grid; gap: 8px; }
 .dk-log li {
   display: grid;
-  grid-template-columns: 60px 1fr auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   gap: 10px;
   align-items: center;
   padding: 11px 14px;
@@ -187,7 +187,7 @@
   font-size: 14px;
   color: var(--neel-100);
 }
-.dk-log li span:first-child { color: var(--neel-200); font-variant-numeric: tabular-nums; }
+.dk-log li span:first-child { color: var(--neel-200); font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 58px; }
 .dk-log b { font-weight: 600; color: var(--genda); font-size: 13px; white-space: nowrap; }
 
 .dk-rera { position: absolute; left: 14px; bottom: 12px; font-size: 11px; font-weight: 700; letter-spacing: .08em; padding: 4px 9px; border-radius: 999px; background: #fff; color: var(--neel); }
@@ -297,7 +297,6 @@
 
 @media (min-width: 720px) {
   .dk-pains { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .dk-pains li { flex-direction: column; align-items: flex-start; padding: 22px; }
   .dk-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dk-ba { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 24px; }
   .dk-arrow { transform: none; }
@@ -312,7 +311,9 @@
   .dk-bento { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto auto; }
   .dk-b1 { grid-row: span 2; }
   .dk-b4 { grid-column: span 2; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 28px; align-items: start; }
+  .dk-b4 { grid-template-rows: auto 1fr; }
   .dk-b4 h3, .dk-b4 > p { grid-column: 1; }
+  .dk-b4 > p { align-self: start; }
   .dk-b4 .dk-summary { grid-column: 2; grid-row: 1 / span 2; padding-top: 0; }
   .dk-own-grid { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 64px; align-items: center; }
 }
@@ -372,11 +373,26 @@
   .dk-funnel-mark { padding-left: calc(40% + 4px); text-align: left; }
   .dk-pricing .dk-price-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .dk-pricing .dk-check { grid-template-columns: 1fr auto; }
-  .dk-own-grid ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .dk .step-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dk .step-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (min-width: 1000px) {
   .dk-new-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .dk .step-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .dk-own-grid { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
+}
+
+/* v2.1 spacing fixes */
+.dk-new-sec { padding-bottom: clamp(40px, 5vw, 64px); }
+.dk-new-sec + .dk-bento-sec { padding-top: clamp(16px, 2vw, 24px); }
+.dk-new .ico { margin-bottom: 4px; }
+.dk-pricing .plan.featured .plan-name { padding-right: 104px; }
+.dk-quote blockquote { margin-top: 14px; }
+.dk-pains { margin-top: 32px; }
+.dk-b1 .dk-stat { padding-top: 20px; }
+@media (max-width: 719px) {
+  .dk-new-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .dk-new { padding: 18px 16px; gap: 6px; }
+  .dk-new h3 { font-size: 17px; }
+  .dk-new p { font-size: 14px; }
+  .dk-new .ico { width: 40px; height: 40px; border-radius: 12px; }
+  .dk-pains li { padding: 14px 16px; }
 }
