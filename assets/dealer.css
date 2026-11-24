@@ -396,3 +396,5 @@
   .dk-new .ico { width: 40px; height: 40px; border-radius: 12px; }
   .dk-pains li { padding: 14px 16px; }
 }
+
+.dk .nav-dealer { display: none !important; }
