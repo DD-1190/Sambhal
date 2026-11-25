@@ -314,7 +314,124 @@ C["hi"].update(
   final_lead="WhatsApp पर एक वॉइस नोट भेजिए — इलाका और आप कैसी प्रॉपर्टी बेचते हैं। हम दिखाएँगे आपके ऐड कैसे दिखेंगे।",
 )
 
-PORTALS = ["Instagram", "Facebook", "Google", "99acres", "MagicBricks", "WhatsApp"]
+
+# ---- v3: bot-first (WhatsApp assistant), demo video, free demo for 30 days; ads = add-on ----
+C["en"].update(
+  title="WhatsApp Assistant for Property Dealers — Reply in 1 Minute | Sambhal",
+  desc="An AI assistant on your WhatsApp that replies to every property lead in 1 minute, asks the right questions, shares matching properties and books site visits. Free demo till 25 Dec.",
+  pill="WhatsApp assistant for property dealers",
+  h1='Every lead answered in 1&nbsp;minute. <span class="hl">More site visits.</span>',
+  h1_plain="Every lead answered in 1 minute. More site visits.",
+  lead="Your WhatsApp assistant replies to every buyer — day or night — asks the right questions, sends matching properties and books the site visit.",
+  cta="Book a free demo", price_link="Plans from ₹15,000/month", watch="Watch the 1-min demo",
+  salary="Free demo in your office, with your own listings — till 25 December.",
+  wa="Hi, I'm a property dealer. I want to book the free demo of the Sambhal WhatsApp assistant.",
+  note="Jawab 38 second mein ✓",
+  sponsored="",
+  works="Works with the leads you already get",
+  q_eyebrow="Sound familiar?",
+  quote="“Lead 7:40 baje aayi. Humne 9:45 pe reply kiya — tab tak buyer kisi aur dealer ke saath visit fix kar chuka tha.”",
+  pains=["Late replies, lost buyers", "Same questions, again and again", "Old leads never called back"],
+  v_eyebrow="See it work", v_h2="One lead, start to site visit — in 70 seconds",
+  v_points=[("Turant reply", "Day or night, in under a minute."),
+            ("Sahi sawaal", "Area, budget and BHK — only serious buyers move ahead."),
+            ("Matching properties", "Straight from your own listings."),
+            ("Visit booked", "Slot, reminder, and the full details sent to you.")],
+  v_sound="Tap for sound", v_cta="Book a free demo",
+  b_eyebrow="What your assistant does", b_h2="Your WhatsApp assistant handles every lead",
+  b1=("Reply in 1 minute", "Day or night, every lead gets a reply — budget, area, BHK.",
+      [("11:04 pm", "99acres", "38 sec"), ("6:52 am", "MagicBricks", "41 sec"), ("1:15 pm", "WhatsApp", "22 sec")], "replied in"),
+  roi_h="One extra deal a quarter pays for Sambhal — many times over.",
+  roi_p="1% on a ₹1 Cr flat is ₹1 lakh to you. Sambhal is ₹45,000 a quarter.",
+  steps=[("Send your listings", "Excel, Google Sheet or just photos on WhatsApp."),
+         ("Connect your number", "Your WhatsApp Business number and the portal alerts you already get."),
+         ("Your assistant starts replying", "Every lead answered. A real expert checks it with you every week.")],
+  own=[("Your number", "Buyers see your business — never Sambhal."),
+       ("Your lead sheet", "Every lead in your own Google Sheet. Take it anytime."),
+       ("Never shared", "Not with portals, not with other dealers.")],
+  n_eyebrow="Add-on · when you’re ready", n_h2="Want new buyers too? We can run local ads for you.",
+  p_h2="Start with the assistant. Add ads when you’re ready.",
+  plan=("WhatsApp Assistant", "Every lead handled, 24×7", "₹15,000", "/month",
+        ["Replies to every lead in 1 minute, 24×7", "Right questions, matching properties", "Site-visit booking and reminders", "Old-lead follow-ups · 8 expert hours a month"],
+        "Book a free demo"),
+  plan_wa="Hi, I'm a property dealer. I want to book the free demo of the Sambhal WhatsApp assistant (₹15,000/month plan).",
+  plan_badge="Start here",
+  plan2=("Assistant + Ads add-on", "When you want new buyers too", "₹35,000", "/month + ad budget",
+        ["Everything in WhatsApp Assistant", "Listings turned into posts, reels and ads", "Local WhatsApp ads, tuned every week", "Weekly visits report · 20 expert hours"],
+        "Ask about the add-on", ""),
+  plan2_wa="Hi, I'm a property dealer. I want to know about the Sambhal ads add-on.",
+  chk=("Free for 30 days", "Free demo — in your office", "We set it up on your own listings and show you live replies. Free till 25 December.", "Free", "Book free demo"),
+  chk_was="₹999",
+  chk_wa="Hi, I'm a property dealer. I want to book the free demo of the Sambhal WhatsApp assistant.",
+  fine="No commission. No contract. Stop any month. WhatsApp message charges are billed at actual cost.",
+  faq=[("Is the demo really free?", "Yes — till 25 December. We set it up on your own listings and show you live replies, in your office or on a call."),
+       ("Will buyers know it’s not me?", "No. Messages go from your number, in your name. Hot buyers and negotiation come straight to you."),
+       ("Does it work with 99acres, MagicBricks and Housing.com?", "Yes. We connect the lead alerts you already get, plus your WhatsApp and Facebook leads."),
+       ("Can it talk in Hindi?", "Yes — Hindi, English or Hinglish, whichever the buyer writes in."),
+       ("Can I add ads later?", "Yes. Start with the assistant; add local ads any month for new buyers.")],
+  final_h2="Free demo. Aapke office mein — aapki apni listings ke saath.",
+  final_lead="Send us a voice note on WhatsApp with your area. We’ll set it up on your listings and show you live — free till 25 December.",
+)
+C["hi"].update(
+  title="प्रॉपर्टी डीलर के लिए WhatsApp असिस्टेंट — 1 मिनट में जवाब | सँभाल",
+  desc="आपके WhatsApp पर AI असिस्टेंट जो हर प्रॉपर्टी लीड को 1 मिनट में जवाब दे, सही सवाल पूछे, मिलती-जुलती प्रॉपर्टी भेजे और साइट विज़िट बुक करे। 25 दिसंबर तक फ़्री डेमो।",
+  pill="प्रॉपर्टी डीलर का WhatsApp असिस्टेंट",
+  h1='हर लीड को 1&nbsp;मिनट में जवाब। <span class="hl">ज़्यादा साइट विज़िट।</span>',
+  h1_plain="हर लीड को 1 मिनट में जवाब। ज़्यादा साइट विज़िट।",
+  lead="आपका WhatsApp असिस्टेंट हर खरीदार को जवाब देता है — दिन हो या रात — सही सवाल पूछता है, मिलती-जुलती प्रॉपर्टी भेजता है और साइट विज़िट बुक करता है।",
+  cta="फ़्री डेमो बुक करें", price_link="प्लान ₹15,000/महीना से", watch="1 मिनट का डेमो देखें",
+  salary="फ़्री डेमो आपके ऑफ़िस में, आपकी अपनी लिस्टिंग के साथ — 25 दिसंबर तक।",
+  wa="नमस्ते, मैं प्रॉपर्टी डीलर हूँ। मुझे सँभाल WhatsApp असिस्टेंट का फ़्री डेमो बुक करना है।",
+  note="जवाब 38 सेकंड में ✓",
+  sponsored="",
+  works="उन्हीं लीड के साथ जो आपको पहले से मिलती हैं",
+  q_eyebrow="क्या आपके साथ भी होता है?",
+  quote="“लीड 7:40 बजे आई। हमने 9:45 पर जवाब दिया — तब तक खरीदार किसी और डीलर के साथ विज़िट तय कर चुका था।”",
+  pains=["देर से जवाब, खरीदार गया", "वही सवाल, बार-बार", "पुरानी लीड को दोबारा फ़ोन नहीं"],
+  v_eyebrow="देखिए कैसे काम करता है", v_h2="एक लीड, शुरू से साइट विज़िट तक — 70 सेकंड में",
+  v_points=[("तुरंत जवाब", "दिन हो या रात, 1 मिनट के अंदर।"),
+            ("सही सवाल", "इलाका, बजट और BHK — सिर्फ़ गंभीर खरीदार आगे।"),
+            ("मिलती-जुलती प्रॉपर्टी", "सीधे आपकी अपनी लिस्टिंग से।"),
+            ("विज़िट बुक", "टाइम, रिमाइंडर, और पूरी डिटेल आपको।")],
+  v_sound="आवाज़ के लिए टैप करें", v_cta="फ़्री डेमो बुक करें",
+  b_eyebrow="आपका असिस्टेंट क्या करता है", b_h2="आपका WhatsApp असिस्टेंट हर लीड सँभालता है",
+  b1=("1 मिनट में जवाब", "दिन हो या रात, हर लीड को जवाब — बजट, इलाका, BHK।",
+      [("11:04 pm", "99acres", "38 सेकंड"), ("6:52 am", "MagicBricks", "41 सेकंड"), ("1:15 pm", "WhatsApp", "22 सेकंड")], "जवाब"),
+  roi_h="तिमाही में एक डील ज़्यादा — और सँभाल का ख़र्च कई गुना वसूल।",
+  roi_p="₹1 करोड़ के फ़्लैट पर 1% यानी आपके ₹1 लाख। सँभाल तिमाही में ₹45,000 का है।",
+  steps=[("लिस्टिंग भेजें", "Excel, Google Sheet या WhatsApp पर बस फ़ोटो।"),
+         ("अपना नंबर जोड़ें", "आपका WhatsApp Business नंबर और पोर्टल के अलर्ट जो आपको आते हैं।"),
+         ("असिस्टेंट जवाब देने लगे", "हर लीड को जवाब। एक असली एक्सपर्ट हर हफ़्ते आपके साथ जाँचता है।")],
+  own=[("आपका नंबर", "खरीदार को आपका बिज़नेस दिखता है — सँभाल नहीं।"),
+       ("आपकी लीड शीट", "हर लीड आपकी अपनी Google Sheet में। जब चाहें ले जाइए।"),
+       ("कभी शेयर नहीं", "न पोर्टल से, न दूसरे डीलरों से।")],
+  n_eyebrow="ऐड-ऑन · जब आप तैयार हों", n_h2="नए खरीदार भी चाहिए? हम आपके लिए लोकल ऐड चला सकते हैं।",
+  p_h2="असिस्टेंट से शुरू करें। ऐड जब चाहें जोड़ें।",
+  plan=("WhatsApp असिस्टेंट", "हर लीड सँभाली जाए, 24×7", "₹15,000", "/महीना",
+        ["हर लीड को 1 मिनट में जवाब, 24×7", "सही सवाल, मिलती-जुलती प्रॉपर्टी", "साइट विज़िट बुकिंग और रिमाइंडर", "पुरानी लीड से बात · हर महीने 8 घंटे एक्सपर्ट"],
+        "फ़्री डेमो बुक करें"),
+  plan_wa="नमस्ते, मैं प्रॉपर्टी डीलर हूँ। मुझे सँभाल WhatsApp असिस्टेंट (₹15,000/महीना) का फ़्री डेमो बुक करना है।",
+  plan_badge="यहाँ से शुरू करें",
+  plan2=("असिस्टेंट + ऐड ऐड-ऑन", "जब नए खरीदार भी चाहिए", "₹35,000", "/महीना + ऐड बजट",
+        ["WhatsApp असिस्टेंट का सब कुछ", "लिस्टिंग से पोस्ट, रील और ऐड", "लोकल WhatsApp ऐड, हर हफ़्ते सुधार", "हर हफ़्ते विज़िट रिपोर्ट · 20 घंटे एक्सपर्ट"],
+        "ऐड-ऑन के बारे में पूछें", ""),
+  plan2_wa="नमस्ते, मैं प्रॉपर्टी डीलर हूँ। मुझे सँभाल के ऐड ऐड-ऑन के बारे में जानना है।",
+  chk=("30 दिन फ़्री", "फ़्री डेमो — आपके ऑफ़िस में", "आपकी अपनी लिस्टिंग पर सेट करके लाइव जवाब दिखाएँगे। 25 दिसंबर तक फ़्री।", "फ़्री", "फ़्री डेमो बुक करें"),
+  chk_was="₹999",
+  chk_wa="नमस्ते, मैं प्रॉपर्टी डीलर हूँ। मुझे सँभाल WhatsApp असिस्टेंट का फ़्री डेमो बुक करना है।",
+  fine="न कमीशन, न कॉन्ट्रैक्ट। किसी भी महीने बंद करें। WhatsApp मैसेज का ख़र्च असल दाम पर।",
+  faq=[("क्या डेमो सच में फ़्री है?", "हाँ — 25 दिसंबर तक। आपकी अपनी लिस्टिंग पर सेट करके लाइव जवाब दिखाते हैं, आपके ऑफ़िस में या कॉल पर।"),
+       ("क्या खरीदार को पता चलेगा कि यह मैं नहीं हूँ?", "नहीं। मैसेज आपके नंबर से, आपके नाम से जाते हैं। गर्म खरीदार और मोलभाव सीधे आपके पास।"),
+       ("क्या यह 99acres, MagicBricks और Housing.com के साथ चलता है?", "हाँ। उनसे जो लीड अलर्ट आपको आते हैं, उन्हें हम जोड़ देते हैं — साथ में WhatsApp और Facebook की लीड भी।"),
+       ("क्या यह हिंदी में बात करता है?", "हाँ — हिंदी, अंग्रेज़ी या हिंग्लिश, जिसमें खरीदार लिखे।"),
+       ("क्या बाद में ऐड जोड़ सकता हूँ?", "हाँ। असिस्टेंट से शुरू करें; नए खरीदारों के लिए किसी भी महीने लोकल ऐड जोड़ें।")],
+  final_h2="फ़्री डेमो। आपके ऑफ़िस में — आपकी अपनी लिस्टिंग के साथ।",
+  final_lead="WhatsApp पर अपने इलाके के साथ एक वॉइस नोट भेजिए। हम आपकी लिस्टिंग पर सेट करके लाइव दिखाएँगे — 25 दिसंबर तक फ़्री।",
+)
+for _l in ("en", "hi"):
+    C[_l]["chat"] = dict(C[_l]["chat"], name=("Amit · 99acres lead" if _l == "en" else "अमित · 99acres लीड"))
+
+PORTALS = ["99acres", "MagicBricks", "Housing.com", "WhatsApp", "Facebook"]
 PAIN_ICO = [ic('<path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M12 8v4l2.5 1.5"/>'),
             ic('<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/>'),
             ic('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/><path d="M16 2l6 6M22 2l-6 6"/>')]
@@ -328,6 +445,29 @@ OWN_ICO = [ic('<path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1
            ic('<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>', 22),
            ic('<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/>', 22),
            ic('<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>', 22)]
+
+
+DEMO_JS = r"""<script>
+(function () {
+  var v = document.getElementById('dk-demo'); if (!v) return;
+  var frame = v.parentNode, snd = frame.querySelector('.dk-sound'), pp = frame.querySelector('.dk-playpause'), userPaused = false;
+  function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { if (!userPaused) play(); } else { v.pause(); } });
+    }, { threshold: 0.45 }).observe(v);
+  }
+  v.addEventListener('play', function () { frame.classList.add('is-playing'); });
+  v.addEventListener('pause', function () { frame.classList.remove('is-playing'); });
+  pp.addEventListener('click', function () { if (v.paused) { userPaused = false; play(); } else { userPaused = true; v.pause(); } });
+  snd.addEventListener('click', function () {
+    v.muted = !v.muted; snd.setAttribute('aria-pressed', String(!v.muted)); frame.classList.toggle('has-sound', !v.muted);
+    if (!v.muted) { v.currentTime = 0; userPaused = false; play(); if (window.va) window.va('event', { name: 'dealer_demo_sound' }); }
+  });
+  v.addEventListener('play', function once() { v.removeEventListener('play', once); if (window.va) window.va('event', { name: 'dealer_demo_play' }); });
+})();
+</script>
+"""
 
 
 def chips(items):
@@ -388,6 +528,7 @@ def build(lang, home):
     newcards = "\n".join(f'        <article class="dk-new"><span class="ico">{NEW_ICO[i]}</span><h3>{t}</h3><p>{d}</p></article>'
                          for i, (t, d, w) in enumerate(c["new"]))
     funnel = "".join(f'<li class="{"dk-sec" if i >= 2 else ""}"><b>{t}</b><span>{d}</span></li>' for i, (t, d) in enumerate(c["funnel"]))
+    vsteps = "".join(f"<li><b>{t}</b><span>{d}</span></li>" for t, d in c["v_points"])
     p2 = c["plan2"]
     plan2_items = "".join(f"<li>{TICK}{x}</li>" for x in p2[4])
 
@@ -403,7 +544,7 @@ def build(lang, home):
                      "priceSpecification": {"@type": "UnitPriceSpecification", "price": "15000", "priceCurrency": "INR", "unitText": "MONTH"}},
                     {"@type": "Offer", "name": c["plan2"][0], "price": "35000", "priceCurrency": "INR",
                      "priceSpecification": {"@type": "UnitPriceSpecification", "price": "35000", "priceCurrency": "INR", "unitText": "MONTH"}},
-                    {"@type": "Offer", "name": c["chk"][1], "price": "999", "priceCurrency": "INR"}]},
+                    {"@type": "Offer", "name": c["chk"][1], "price": "0", "priceCurrency": "INR", "validThrough": "2026-12-25"}]},
         {"@type": "BreadcrumbList", "@id": url(lang, SLUG) + "#breadcrumb", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": c["home"], "item": url(lang)},
             {"@type": "ListItem", "position": 2, "name": c["crumb"], "item": url(lang, SLUG)}]},
@@ -464,16 +605,16 @@ def build(lang, home):
         <p class="lead">{c["lead"]}</p>
         <div class="hero-actions">
           <a class="btn btn-accent" data-cta="whatsapp-dealer-hero" href="{wa}">{ICON["chat"]}{c["cta"]}</a>
-          <a class="link-arrow" href="#{c["pricing_anchor"]}">{c["price_link"]} →</a>
+          <a class="link-arrow dk-watch" href="#demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>{c["watch"]}</a>
         </div>
-        <p class="dk-salary">{c["salary"]}</p>
+        <p class="dk-salary">{c["salary"]} <a href="#{c["pricing_anchor"]}">{c["price_link"]} →</a></p>
       </div>
 
       <div class="dk-collage">
         <div class="dk-photo">{pic("desk", "", "(min-width: 900px) 420px, 74vw", "", True, 1024, 1280)}</div>
         <p class="dk-note" aria-hidden="true">{c["note"]}</p>
         <div class="dk-phone">{phone}</div>
-        <div class="dk-lcard" aria-hidden="true">{pic("floor", "", "260px", "", True, 1200, 800)}<div><small class="dk-spon">{c["sponsored"]}</small><b>{lc[0]}</b><span>{lc[1]}</span><ul class="dk-chips">{chips(lc[2])}</ul></div></div>
+        <div class="dk-lcard" aria-hidden="true">{pic("floor", "", "260px", "", True, 1200, 800)}<div><b>{lc[0]}</b><span>{lc[1]}</span><ul class="dk-chips">{chips(lc[2])}</ul></div></div>
         <div class="dk-toast" aria-hidden="true"><span class="dk-tick">{TICK}</span><div><strong>{c["toast"][0]}</strong><span>{c["toast"][1]}</span></div></div>
       </div>
     </div>
@@ -490,14 +631,18 @@ def build(lang, home):
     </div>
   </section>
 
-  <section class="dk-new-sec">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">{c["n_eyebrow"]}</span>
-        <h2>{c["n_h2"]}</h2>
+  <section class="dk-video" id="demo">
+    <div class="wrap dk-video-grid">
+      <div class="dk-video-copy">
+        <span class="eyebrow">{c["v_eyebrow"]}</span>
+        <h2>{c["v_h2"]}</h2>
+        <ol class="dk-vsteps">{vsteps}</ol>
+        <a class="btn btn-accent" data-cta="whatsapp-dealer-video" href="{wa}">{ICON["chat"]}{c["v_cta"]}</a>
       </div>
-      <div class="dk-new-grid">
-{newcards}
+      <div class="dk-video-frame">
+        <video id="dk-demo" src="/assets/dealer/demo-720.mp4" poster="/assets/dealer/demo-poster.webp" width="720" height="1280" muted loop playsinline preload="none" aria-label="{c["v_h2"]}"></video>
+        <button type="button" class="dk-sound" data-cta="video-sound" aria-pressed="false"><span class="dk-sound-ico" aria-hidden="true">🔊</span><span>{c["v_sound"]}</span></button>
+        <button type="button" class="dk-playpause" aria-label="Play / pause"></button>
       </div>
     </div>
   </section>
@@ -559,6 +704,18 @@ def build(lang, home):
     </div>
   </section>
 
+  <section class="dk-new-sec dk-addon">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">{c["n_eyebrow"]}</span>
+        <h2>{c["n_h2"]}</h2>
+      </div>
+      <div class="dk-new-grid">
+{newcards}
+      </div>
+    </div>
+  </section>
+
   <section class="pricing dk-pricing" id="{c["pricing_anchor"]}">
     <div class="wrap">
       <div class="section-head center">
@@ -566,20 +723,20 @@ def build(lang, home):
         <h2>{c["p_h2"]}</h2>
       </div>
       <div class="dk-price-grid">
-        <div class="plan">
+        <div class="plan featured">
+          <span class="badge">{c["plan_badge"]}</span>
           <p class="plan-name">{pl[0]}</p>
           <p class="plan-for">{pl[1]}</p>
           <p class="plan-price"><b>{pl[2]}</b><span>{pl[3]}</span></p>
           <ul>{plan_items}</ul>
-          <a class="btn btn-outline" data-cta="plan-dealer-secretary" href="{WA}{urllib.parse.quote(c["plan_wa"])}">{pl[5]}</a>
+          <a class="btn btn-accent" data-cta="plan-dealer-secretary" href="{WA}{urllib.parse.quote(c["plan_wa"])}">{pl[5]}</a>
         </div>
-        <div class="plan featured">
-          <span class="badge">{p2[6]}</span>
+        <div class="plan dk-plan-addon">
           <p class="plan-name">{p2[0]}</p>
           <p class="plan-for">{p2[1]}</p>
           <p class="plan-price"><b>{p2[2]}</b><span>{p2[3]}</span></p>
           <ul>{plan2_items}</ul>
-          <a class="btn btn-accent" data-cta="plan-dealer-lead-engine" href="{WA}{urllib.parse.quote(c["plan2_wa"])}">{p2[5]}</a>
+          <a class="btn btn-outline" data-cta="plan-dealer-lead-engine" href="{WA}{urllib.parse.quote(c["plan2_wa"])}">{p2[5]}</a>
         </div>
       </div>
       <div class="check-strip dk-check">
@@ -589,8 +746,8 @@ def build(lang, home):
           <p>{c["chk"][2]}</p>
         </div>
         <div class="price-side">
-          <span class="big">{c["chk"][3]}</span>
-          <a class="btn btn-primary" data-cta="whatsapp-check-dealer" href="{WA}{urllib.parse.quote(c["chk_wa"])}">{c["chk"][4]}</a>
+          <span class="big"><s>{c["chk_was"]}</s> {c["chk"][3]}</span>
+          <a class="btn btn-primary" data-cta="whatsapp-free-demo-dealer" href="{WA}{urllib.parse.quote(c["chk_wa"])}">{c["chk"][4]}</a>
         </div>
       </div>
       <p class="fine">{c["fine"]}</p>
@@ -613,7 +770,7 @@ def build(lang, home):
 
 </main>
 
-<script defer src="/_vercel/insights/script.js"></script>
+{DEMO_JS}<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 '''

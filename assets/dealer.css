@@ -398,3 +398,50 @@
 }
 
 .dk .nav-dealer { display: none !important; }
+
+/* ---------- v3: demo video, assistant-first pricing ---------- */
+.dk-watch { display: inline-flex; align-items: center; gap: 8px; }
+.dk-watch svg { width: 22px; height: 22px; padding: 5px; border-radius: 50%; background: var(--neel); color: #fff; }
+.dk-salary a { color: var(--neel); font-weight: 600; white-space: nowrap; }
+
+.dk-video { padding: var(--section) 0; background: var(--neel-deep, #161D45); color: #F7F3EA; }
+.dk-video .eyebrow { color: var(--genda); }
+.dk-video h2 { color: #fff; margin-top: 8px; }
+.dk-video-grid { display: grid; gap: 40px; align-items: center; }
+.dk-vsteps { list-style: none; counter-reset: v; margin: 28px 0 32px; padding: 0; display: grid; gap: 14px; }
+.dk-vsteps li { counter-increment: v; display: grid; grid-template-columns: 36px 1fr; column-gap: 14px; }
+.dk-vsteps li::before { content: counter(v); grid-row: span 2; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 15px; background: rgba(242, 164, 58, .16); color: var(--genda); }
+.dk-vsteps b { font-size: 18px; color: #fff; }
+.dk-vsteps span { font-size: 15px; color: var(--neel-200); }
+
+.dk-video-frame {
+  position: relative; justify-self: center; width: min(100%, 340px); aspect-ratio: 9 / 16;
+  border-radius: 34px; padding: 8px; background: linear-gradient(145deg, #3a3d4a, #15161D);
+  box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .7), inset 0 0 0 1px rgba(255,255,255,.08);
+}
+.dk-video-frame video { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 27px; background: #232E66; }
+.dk-playpause { position: absolute; inset: 8px; border: 0; background: transparent; cursor: pointer; border-radius: 27px; }
+.dk-playpause::after {
+  content: ""; position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%;
+  background: rgba(242, 164, 58, .95) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='%2315161D'/%3E%3C/svg%3E") center / 30px no-repeat;
+  box-shadow: 0 12px 30px -8px rgba(0,0,0,.5); transition: opacity .2s;
+}
+.dk-video-frame.is-playing .dk-playpause::after { opacity: 0; }
+.dk-sound {
+  position: absolute; z-index: 2; left: 50%; bottom: 22px; transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+  padding: 10px 16px; border: 0; border-radius: 999px; cursor: pointer;
+  font: 600 14px/1 var(--font); color: var(--ink); background: rgba(255,255,255,.94);
+  box-shadow: 0 10px 24px -10px rgba(0,0,0,.5);
+}
+.dk-video-frame.has-sound .dk-sound { opacity: .0; pointer-events: none; }
+
+.dk-addon { background: var(--surface); border-top: 1px solid var(--line); padding-top: var(--section); }
+.dk-addon .eyebrow { color: var(--mitti); }
+.dk-plan-addon { background: var(--bg); }
+.dk-check .big s { font-size: .55em; color: var(--muted); font-weight: 500; margin-right: 6px; }
+
+@media (min-width: 900px) {
+  .dk-video-grid { grid-template-columns: minmax(0, 1fr) auto; gap: 72px; }
+  .dk-video-frame { width: 340px; }
+}
