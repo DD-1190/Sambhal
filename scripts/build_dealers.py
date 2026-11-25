@@ -447,27 +447,71 @@ OWN_ICO = [ic('<path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1
            ic('<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>', 22)]
 
 
+C["en"].update(
+  v_eyebrow="70-second demo", v_h2="Watch one lead turn into a site visit.",
+  v_sub="The real WhatsApp flow — exactly what your buyer sees, and what lands on your phone.",
+  v_chapters=[(0, "The problem", "A lead at 7:40 pm, a reply at 9:45 — visit lost."),
+              (16, "Instant reply", "Day or night, in under a minute."),
+              (26, "Right questions", "Area, budget, BHK — serious buyers only."),
+              (31, "Matching properties", "Straight from your own listings."),
+              (36, "Visit booked", "Slot fixed, reminder set."),
+              (41, "Details to you", "Name, number, budget and visit time on your WhatsApp.")],
+  v_sound="Tap for sound", v_cta="Book a free demo", v_note="Free till 25 December · No app to install",
+  v_chap_label="Chapters",
+)
+C["hi"].update(
+  v_eyebrow="70 सेकंड का डेमो", v_h2="देखिए, एक लीड कैसे साइट विज़िट बनती है।",
+  v_sub="असली WhatsApp फ़्लो — जो आपका खरीदार देखता है, और जो आपके फ़ोन पर आता है।",
+  v_chapters=[(0, "समस्या", "लीड 7:40 बजे, जवाब 9:45 पर — विज़िट गई।"),
+              (16, "तुरंत जवाब", "दिन हो या रात, 1 मिनट के अंदर।"),
+              (26, "सही सवाल", "इलाका, बजट, BHK — सिर्फ़ गंभीर खरीदार।"),
+              (31, "मिलती-जुलती प्रॉपर्टी", "सीधे आपकी अपनी लिस्टिंग से।"),
+              (36, "विज़िट बुक", "टाइम तय, रिमाइंडर सेट।"),
+              (41, "पूरी डिटेल आपको", "नाम, नंबर, बजट और विज़िट टाइम आपके WhatsApp पर।")],
+  v_sound="आवाज़ के लिए टैप करें", v_cta="फ़्री डेमो बुक करें", v_note="25 दिसंबर तक फ़्री · कोई ऐप नहीं",
+  v_chap_label="चैप्टर",
+)
+
 DEMO_JS = r"""<script>
 (function () {
   var v = document.getElementById('dk-demo'); if (!v) return;
-  var frame = v.parentNode, snd = frame.querySelector('.dk-sound'), pp = frame.querySelector('.dk-playpause'), userPaused = false;
+  var scr = v.parentNode, stage = scr.closest('.dk-stage');
+  var chaps = [].slice.call(stage.querySelectorAll('.dk-chap'));
+  var bar = scr.querySelector('.dk-ctrl-bar span'), time = scr.querySelector('.dk-ctrl-time'), userPaused = false, started = false;
+  function fmt(t) { t = Math.max(0, Math.floor(t)); return Math.floor(t / 60) + ':' + ('0' + t % 60).slice(-2); }
   function play() { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  function sync() {
+    var t = v.currentTime, d = v.duration || 70.5;
+    bar.style.width = (t / d * 100) + '%'; time.textContent = fmt(t) + ' / ' + fmt(d);
+    chaps.forEach(function (c) {
+      var a = +c.dataset.t, b = +c.dataset.end, on = t >= a && t < b;
+      c.classList.toggle('is-on', on); c.classList.toggle('is-done', t >= b);
+      c.querySelector('i').style.width = on ? ((t - a) / (b - a) * 100) + '%' : (t >= b ? '100%' : '0%');
+    });
+  }
+  v.addEventListener('timeupdate', sync); v.addEventListener('loadedmetadata', sync);
+  v.addEventListener('play', function () { scr.classList.add('is-playing'); if (!started) { started = true; if (window.va) window.va('event', { name: 'dealer_demo_play' }); } });
+  v.addEventListener('pause', function () { scr.classList.remove('is-playing'); });
+  v.addEventListener('ended', function () { scr.classList.add('is-ended'); });
+  function toggle() { if (v.paused) { userPaused = false; scr.classList.remove('is-ended'); play(); } else { userPaused = true; v.pause(); } }
+  scr.querySelector('.dk-bigplay').addEventListener('click', toggle);
+  scr.querySelector('.dk-ctrl-pp').addEventListener('click', toggle);
+  v.addEventListener('click', toggle);
+  function setSound(on) { v.muted = !on; scr.classList.toggle('has-sound', on); }
+  scr.querySelector('.dk-unmute').addEventListener('click', function () { setSound(true); v.currentTime = 0; userPaused = false; play(); if (window.va) window.va('event', { name: 'dealer_demo_sound' }); });
+  scr.querySelector('.dk-ctrl-mute').addEventListener('click', function () { setSound(v.muted); });
+  scr.querySelector('.dk-ctrl-bar').parentNode.querySelector('.dk-ctrl-bar').addEventListener('click', function (e) {
+    var r = this.getBoundingClientRect(); v.currentTime = (e.clientX - r.left) / r.width * (v.duration || 70.5); play();
+  });
+  chaps.forEach(function (c) { c.addEventListener('click', function () { v.currentTime = +c.dataset.t; userPaused = false; scr.classList.remove('is-ended'); play(); }); });
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (e.isIntersecting) { if (!userPaused) play(); } else { v.pause(); } });
-    }, { threshold: 0.45 }).observe(v);
+      es.forEach(function (e) { if (e.isIntersecting) { if (!userPaused && !scr.classList.contains('is-ended')) play(); } else { v.pause(); } });
+    }, { threshold: 0.5 }).observe(v);
   }
-  v.addEventListener('play', function () { frame.classList.add('is-playing'); });
-  v.addEventListener('pause', function () { frame.classList.remove('is-playing'); });
-  pp.addEventListener('click', function () { if (v.paused) { userPaused = false; play(); } else { userPaused = true; v.pause(); } });
-  snd.addEventListener('click', function () {
-    v.muted = !v.muted; snd.setAttribute('aria-pressed', String(!v.muted)); frame.classList.toggle('has-sound', !v.muted);
-    if (!v.muted) { v.currentTime = 0; userPaused = false; play(); if (window.va) window.va('event', { name: 'dealer_demo_sound' }); }
-  });
-  v.addEventListener('play', function once() { v.removeEventListener('play', once); if (window.va) window.va('event', { name: 'dealer_demo_play' }); });
 })();
 </script>
-"""
+<script defer src="/_vercel/insights/script.js"></script>"""
 
 
 def chips(items):
@@ -528,7 +572,8 @@ def build(lang, home):
     newcards = "\n".join(f'        <article class="dk-new"><span class="ico">{NEW_ICO[i]}</span><h3>{t}</h3><p>{d}</p></article>'
                          for i, (t, d, w) in enumerate(c["new"]))
     funnel = "".join(f'<li class="{"dk-sec" if i >= 2 else ""}"><b>{t}</b><span>{d}</span></li>' for i, (t, d) in enumerate(c["funnel"]))
-    vsteps = "".join(f"<li><b>{t}</b><span>{d}</span></li>" for t, d in c["v_points"])
+    _ch = c["v_chapters"]
+    chapters = "".join(f'<li><button type="button" class="dk-chap" data-t="{t}" data-end="{_ch[i + 1][0] if i + 1 < len(_ch) else 70.5}"><span class="dk-chap-time">{t // 60}:{t % 60:02d}</span><span class="dk-chap-txt"><b>{ti}</b><span>{d}</span></span><span class="dk-chap-prog" aria-hidden="true"><i></i></span></button></li>' for i, (t, ti, d) in enumerate(_ch))
     p2 = c["plan2"]
     plan2_items = "".join(f"<li>{TICK}{x}</li>" for x in p2[4])
 
@@ -632,17 +677,35 @@ def build(lang, home):
   </section>
 
   <section class="dk-video" id="demo">
-    <div class="wrap dk-video-grid">
-      <div class="dk-video-copy">
-        <span class="eyebrow">{c["v_eyebrow"]}</span>
+    <div class="wrap">
+      <div class="dk-v-head">
+        <span class="dk-v-pill"><span class="dk-v-dot" aria-hidden="true"></span>{c["v_eyebrow"]}</span>
         <h2>{c["v_h2"]}</h2>
-        <ol class="dk-vsteps">{vsteps}</ol>
-        <a class="btn btn-accent" data-cta="whatsapp-dealer-video" href="{wa}">{ICON["chat"]}{c["v_cta"]}</a>
+        <p>{c["v_sub"]}</p>
       </div>
-      <div class="dk-video-frame">
-        <video id="dk-demo" src="/assets/dealer/demo-720.mp4" poster="/assets/dealer/demo-poster.webp" width="720" height="1280" muted loop playsinline preload="none" aria-label="{c["v_h2"]}"></video>
-        <button type="button" class="dk-sound" data-cta="video-sound" aria-pressed="false"><span class="dk-sound-ico" aria-hidden="true">🔊</span><span>{c["v_sound"]}</span></button>
-        <button type="button" class="dk-playpause" aria-label="Play / pause"></button>
+      <div class="dk-stage">
+        <div class="dk-device">
+          <div class="dk-device-screen">
+            <span class="dk-island" aria-hidden="true"></span>
+            <video id="dk-demo" src="/assets/dealer/demo-720.mp4" poster="/assets/dealer/demo-poster.webp" width="720" height="1280" muted playsinline preload="metadata" aria-label="{c["v_h2"]}"></video>
+            <button type="button" class="dk-bigplay" aria-label="Play"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+            <button type="button" class="dk-unmute" data-cta="video-sound"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>{c["v_sound"]}</button>
+            <div class="dk-ctrl">
+              <button type="button" class="dk-ctrl-pp" aria-label="Play / pause"><svg class="i-play" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg><svg class="i-pause" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg></button>
+              <div class="dk-ctrl-bar" aria-hidden="true"><span></span></div>
+              <span class="dk-ctrl-time">0:00</span>
+              <button type="button" class="dk-ctrl-mute" aria-label="Sound on / off"><svg class="i-off" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M22 9l-6 6M16 9l6 6"/></svg><svg class="i-on" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="dk-chapters">
+          <p class="dk-chap-label">{c["v_chap_label"]}</p>
+          <ol>{chapters}</ol>
+          <div class="dk-v-cta">
+            <a class="btn btn-accent" data-cta="whatsapp-dealer-video" href="{wa}">{ICON["chat"]}{c["v_cta"]}</a>
+            <span>{c["v_note"]}</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
